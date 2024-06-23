@@ -73,7 +73,7 @@ plt.ylabel('')
 plt.show()
 ```
 ### 📺 Results
-![Number of Jobs per Title](Number%20of%20jobs%20per%20title.png)
+![Number of Jobs per Title](Number_of_jobs_per_title.png)
 
  
 🔬Insights:
