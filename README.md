@@ -73,7 +73,8 @@ plt.ylabel('')
 plt.show()
 ```
 ### 📺 Results
-![](https://github.com/NeelGandhi24295/Python_Project_Revamp/blob/main/Number%20of%20jobs%20per%20title.png)
+![Number of Jobs per Title](Number%20of%20jobs%20per%20title.png)
+
  
 🔬Insights:
 •	High Demand for Engineering Roles: Data engineering roles dominate the job market, suggesting that organizations are heavily investing in building robust data infrastructures.
