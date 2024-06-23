@@ -76,14 +76,16 @@ plt.show()
 ![Number of Jobs per Title](Number_of_jobs_per_title.png)
 
  
-🔬Insights:
+### 🔬Insights:
 •	High Demand for Engineering Roles: Data engineering roles dominate the job market, suggesting that organizations are heavily investing in building robust data infrastructures.
 •	Strong Demand for Analytical Roles: Data scientists and analysts are also in high demand, underscoring the importance of extracting insights from data.
 •	Specialization and Experience Matter: Senior roles in data engineering and data science show significant demand, indicating that experience and specialization are highly valued.
 •	Emerging Technologies: Roles like machine learning engineers and cloud engineers, while fewer in number, highlight the industry’s shift towards advanced analytics and cloud-based solutions.
-2. 🏙️The Indian cities prominent in hiring for these roles🏙️
+
+### 2. 🏙️The Indian cities prominent in hiring for these roles🏙️
 Given the significant demand for data-oriented roles, the next question is: which state or city is the front-runner in offering these jobs? Identifying these locations is crucial as they likely offer better exposure and career growth opportunities in data technologies.
-📺 Visualize Data
+### 📺 Visualize Data
+```python
 df_DA_ind= df[(df['job_country'] == 'India') & (df['job_title_short'] == 'Data Analyst')]
 df_plot = df_DA_ind['job_location'].value_counts()[1:].head(10).to_frame()
 
@@ -94,8 +96,9 @@ plt.title('Counts of Job Locations for Data Analyst in the India')
 plt.xlabel('Number of Jobs')
 plt.ylabel('')
 plt.show()
-📺 Results
- 
+```
+### 📺 Results
+ ![](Count of Job based on Location.png)
 🔬 Insights:
 •	Hyderabad, Telangana, has the highest number of Data Analyst job postings, indicating it is a major hub for Data Analyst positions in India.
 •	The “Anywhere” category has the second-highest number of job postings, highlighting the availability of remote or location-independent Data Analyst positions. This trend may reflect the growing acceptance of remote work in the industry.
