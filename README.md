@@ -67,7 +67,7 @@ To explore the state of the job market in India, I investigated several key area
 3.	Availability of remote job options and specialized degree requirements for these roles
 4.	Companies that actively hired data analysts in 2023.
 	
-### 📈 1.The Job Market for Various Data-Related Roles in India
+### 📈 1.The Job Market for Various Data-Related Roles in India📈
 
 The first question that often arises when considering a career change is the number of job postings and the demand for the new role. To address this, I analyzed the number of positions posted in 2023 for data-oriented roles.
 
@@ -182,7 +182,7 @@ plt.show()
 *	Education and assessment analytics are likely the focus within Prometrics Solutions, involving educational data and performance metrics.
 *	This indicates the widespread and versatile demand for Data Analysts in multiple professional settings. Note: I’ve narrowed down my analysis to the top 10 companies, but further exploration can provide a comprehensive list of companies actively hiring for data analyst roles.
 
-## 2. 🛠️ What skills do I need to develop for a data analyst role?️
+## 2. 🛠️ What skills do I need to develop for a data analyst role?️🛠️
 Knowing that there’s a growing demand for data analysts across various industries naturally leads to the question: what specific skill set is most sought after for this role?
 
 ### 📺 Visualize Data
