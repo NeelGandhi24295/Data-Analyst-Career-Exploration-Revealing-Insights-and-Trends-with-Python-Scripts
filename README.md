@@ -215,7 +215,9 @@ plt.show()
 
 ### 📺 Results
 ![](LH%20of%20Skills%20Required.png)
+
 **Note**: The job profiles listed include only the top five roles for each category.
+
 ### 🔬Insights:
 *	It appears that SQL stands out as the most requested skill for both Data Analysts and Data Scientists, featuring in over half of job postings for each role.
 *	Python, on the other hand, emerges as crucial primarily for Data Scientists, being sought after in 70% of job listings.
