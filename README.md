@@ -86,6 +86,7 @@ plt.show()
 ### 📺 Results
 ![](Number_of_jobs_per_title.png)
 
+
  
 ### 🔬Insights:
 *	High Demand for Engineering Roles: Data engineering roles dominate the job market, suggesting that organizations are heavily investing in building robust data infrastructures.
@@ -113,6 +114,8 @@ plt.show()
 ### 📺 Results
  ![](Count%20of%20Job%20based%20on%20Location.png)
  
+**Note**: The list includes only the top 10 cities.
+
 ### 🔬 Insights:
 *	Hyderabad, Telangana, has the highest number of Data Analyst job postings, indicating it is a major hub for Data Analyst positions in India.
 *	The “Anywhere” category has the second-highest number of job postings, highlighting the availability of remote or location-independent Data Analyst positions. This trend may reflect the growing acceptance of remote work in the industry.
@@ -168,6 +171,8 @@ plt.show()
 
 ### 📺 Results
 ![](Companies%20for%20DA.png)
+
+**Note**: The list includes only the top 10 companies.
  
 ### 🔬 Insights:
 *	The Data Analyst roles across these companies demonstrate a diverse orientation towards several key industries.
@@ -210,7 +215,7 @@ plt.show()
 
 ### 📺 Results
 ![](LH%20of%20Skills%20Required.png)
- 
+**Note**: The job profiles listed include only the top five roles for each category.
 ### 🔬Insights:
 *	It appears that SQL stands out as the most requested skill for both Data Analysts and Data Scientists, featuring in over half of job postings for each role.
 *	Python, on the other hand, emerges as crucial primarily for Data Scientists, being sought after in 70% of job listings.
@@ -245,6 +250,8 @@ for i in range(5):
 ### 📺 Results
 
 ![](Trend%20for%20top%20skills.png)
+
+**Note**:The list includes only the top 5 skills.
  
 ### 🔬Insights:
 
@@ -323,6 +330,8 @@ plt.show()
 ```
 ### 📺Results:
 ![](Highest%20Paid%20%26%20Most%20Demanded%20Skills.png)
+
+**Note**:The list includes only the top 10 highest paying skills and most in-demand skills.
  
 ### 🔬Insights:
 *	The skills that command high salaries s are indicative of advanced technical competencies, particularly in database management (PostgreSQL, MySQL, MongoDB, Neo4j), big data processing (PySpark, Scala), data governance (GDPR), and software development/DevOps (GitLab, Linux, Databricks).
