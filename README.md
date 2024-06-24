@@ -1,18 +1,21 @@
 ## ⭐Introduction⭐
+
 * Recently, I made a pivotal decision to shift gears from my role as a design engineer to pursue opportunities in the data-oriented job market. This leap sparked numerous questions: How prevalent are these roles? Are they accessible in India? What sort of compensation can one expect? And crucially, what skills should I focus on learning? Fortunately, my quest for answers led me to stumble upon a comprehensive dataset compiled by Luke Barousse, meticulously detailing job trends for the year 2023 worldwide.
 
 * This dataset includes average salaries, diverse job roles, and essential skills demanded in the industry. It’s a guiding beacon for newcomers like myself, offering invaluable insights to navigate this transformative career path with confidence and clarity.
 I focused my attention on the data analyst role during my exploration into the realm of data-oriented careers. However, if you are interested in roles such as data engineer, data scientist, or others, I encourage you to customize the analysis to suit your interests. Using Python scripts, I conducted a detailed investigation into critical aspects such as the most in-demand skills, salary trends, and the intersection of demand with earning potential in data analytics. This analysis aims to provide clear insights for individuals looking to transition into a data-oriented career path.
 
 ## 🤔Questions I Had🤔
-Here are the questions I aimed to answer for a data analyst role in India:
-* 1.	I wanted to conduct an exploratory data analysis on job counts related to data-oriented jobs in India. My goal was to identify which states offer better opportunities in terms of job postings. Additionally, I was curious about whether a specialized degree is required for these roles and if work-from-home options are still available. Lastly, I aimed to discover which companies had done most of the recruitment for these roles in 2023.
-* 2.	What skills do I need to develop for a data analyst role?
-* 3.	Once I acquire these skills, how will they trend in the data analyst job market?
-* 4.	How well do jobs and skills pay for Data Analysts?
-* 5.	What are the most valuable skills for data analysts to learn? (In high demand and offering high pay)
+
+* Here are the questions I aimed to answer for a data analyst role in India:
+     1. I wanted to conduct an exploratory data analysis on job counts related to data-oriented jobs in India. My goal was to identify which states offer better opportunities in terms of job postings. Additionally, I was curious about whether a specialized degree is required for these roles and if work-from-home options are still available. Lastly, I aimed to discover which companies had done most of the recruitment for these roles in 2023.
+     2. What skills do I need to develop for a data analyst role?
+     3. Once I acquire these skills, how will they trend in the data analyst job market?
+     4. How well do jobs and skills pay for Data Analysts?
+     5. What are the most valuable skills for data analysts to learn? (In high demand and offering high pay)
      
 ## 🛠️Tools I Used🛠️
+
 In my deep exploration of the data analyst job market, I employed a suite of powerful tools:
 *	**Python** was the cornerstone of my analysis, enabling robust data manipulation and insightful discoveries. Supporting Python, I utilized:
     *  **Pandas** library for efficient data analysis.
@@ -25,6 +28,7 @@ In my deep exploration of the data analyst job market, I employed a suite of pow
 These tools empowered me to deeply understand trends and patterns within the data analyst job landscape.
 
 ## 🧹Data Preparation and Cleanup🧹
+
 This section details the steps I took to prepare the data for analysis, ensuring accuracy and usability.
 ```python
 ## Import and Clean Up Data
@@ -45,19 +49,25 @@ df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.no
 ```
 
 ## 🇮🇳 “Focus on India’s Job Market” 🇮🇳
+
 I wanted to focus on jobs in the Indian market, so I filtered the dataset accordingly.
 ```python
 df_ind = df[df['job_country'] == 'India'].dropna(subset='salary_year_avg')
 ```
 ## 🔍Analysis🔍
+
 Each Jupyter notebook in this project was designed to investigate specific aspects of the data job market. Here’s how I approached each question:
+
 ## 1. 📊Exploratory Data Analysis📊
+
 To explore the state of the job market in India, I investigated several key areas:
 1.	The Job Market for Various Data-Related Roles in India.
 2.	The Indian cities prominent in hiring for these roles 3
 3.	Availability of remote job options and specialized degree requirements for these roles
 4.	Companies that actively hired data analysts in 2023.
+5.	
 ### 📈 1.The Job Market for Various Data-Related Roles in India
+
 The first question that often arises when considering a career change is the number of job postings and the demand for the new role. To address this, I analyzed the number of positions posted in 2023 for data-oriented roles.
 
 ### 📺 Visualize Data
@@ -83,7 +93,9 @@ plt.show()
 •	Emerging Technologies: Roles like machine learning engineers and cloud engineers, while fewer in number, highlight the industry’s shift towards advanced analytics and cloud-based solutions.
 
 ### 2. 🏙️The Indian cities prominent in hiring for these roles🏙️
+
 Given the significant demand for data-oriented roles, the next question is: which state or city is the front-runner in offering these jobs? Identifying these locations is crucial as they likely offer better exposure and career growth opportunities in data technologies.
+
 ### 📺 Visualize Data
 ```python
 df_DA_ind= df[(df['job_country'] == 'India') & (df['job_title_short'] == 'Data Analyst')]
@@ -99,14 +111,19 @@ plt.show()
 ```
 ### 📺 Results
  ![](Count of Job based on Location.png)
+ 
 🔬 Insights:
 •	Hyderabad, Telangana, has the highest number of Data Analyst job postings, indicating it is a major hub for Data Analyst positions in India.
 •	The “Anywhere” category has the second-highest number of job postings, highlighting the availability of remote or location-independent Data Analyst positions. This trend may reflect the growing acceptance of remote work in the industry.
 •	Bengaluru, Karnataka, shows many job postings, making it another key location for Data Analyst roles. Bengaluru is known for being a major tech hub in India, which aligns with this demand.
 •	Maharashtra, including specific cities like Mumbai and Pune, has a significant number of job postings. This indicates a strong demand for Data Analysts in this state, especially in its major cities. *Other cities with notable job postings include Gurugram (Haryana), Chennai (Tamil Nadu), Secunderabad (Telangana), and Indore (Madhya Pradesh). This suggests that opportunities for Data Analysts are spread across various major cities in India.
-3 🌐 Availability of remote job options and specialized degree requirements for these roles🌐
+
+## 3 🌐 Availability of remote job options and specialized degree requirements for these roles🌐
+
 •	Having noticed that remote work opportunities have become increasingly prevalent, prompting my curiosity about the overall percentage of jobs that offer remote options. Additionally, I’m interested in understanding whether a specialized degree is typically required to qualify for data analyst roles.
-📺 Visualize Data
+
+### 📺 Visualize Data
+```python
 dict_column = {
     'job_work_from_home': 'Work from Home Offered for Data Analyst Role in India',
     'job_no_degree_mention': 'Degree Requirement for Data Analyst Role in India',
@@ -120,7 +137,10 @@ for i, (column, title) in enumerate(dict_column.items()):
     ax[i].set_title(title)
 
 plt.show()
+```
+
 📺Results
+![](WFH, dEgree Requirement.png)
  
 🔬 Insights:
 •	A large majority of data analyst positions in India require on-site work rather than offering remote work options.
